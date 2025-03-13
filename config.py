@@ -6,27 +6,27 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Bot Configuration
-BOT_TOKEN = os.getenv("7971581858:AAHGWOH_W8f9PnZ2U8BgJrjxhDdfaCwMW0E")
-API_ID = int(os.getenv("27810925"))
-API_HASH = os.getenv("04b5c9dd67d1e551ac2f62f25b2d1aad")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7971581858:AAHGWOH_W8f9PnZ2U8BgJrjxhDdfaCwMW0E")
+API_ID = int(os.getenv("API_ID", "27810925"))
+API_HASH = os.getenv("API_HASH", "04b5c9dd67d1e551ac2f62f25b2d1aad")
 
 # Database Configuration
-MONGO_URI = os.getenv("mongodb+srv://XTV:CLLEls0jF9DbITqi@cluster0.10z7p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = os.getenv("Cluster0")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://XTV:CLLEls0jF9DbITqi@cluster0.10z7p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = os.getenv("DATABASE_NAME", "Cluster0")
 
 # Channel Configuration
-DB_CHANNEL_ID = int(os.getenv("-1002569527014"))
-FORCE_SUB_CHANNEL = int(os.getenv("-1002243932904"))
+DB_CHANNEL_ID = int(os.getenv("DB_CHANNEL_ID", "-1002569527014"))
+FORCE_SUB_CHANNEL = int(os.getenv("FORCE_SUB_CHANNEL", "-1002243932904"))
 
 # Bot Information
-BOT_USERNAME = os.getenv("xtvfile2bot")
-BOT_NAME = os.getenv("𝕏-FileStore 2.1")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "xtvfile2bot")
+BOT_NAME = os.getenv("BOT_NAME", "𝕏-FileStore 2.1")
 BOT_VERSION = "1.0"
 
 # Links
-CHANNEL_LINK = os.getenv("t.me/xtveurope")
-DEVELOPER_LINK = os.getenv("t.me/davdxp")
-SUPPORT_LINK = os.getenv("t.me/xtveurope")
+CHANNEL_LINK = os.getenv("CHANNEL_LINK", "t.me/xtveurope")
+DEVELOPER_LINK = os.getenv("DEVELOPER_LINK", "t.me/davdxp")
+SUPPORT_LINK = os.getenv("SUPPORT_LINK", "t.me/xtveurope")
 
 # Admin IDs - Convert space-separated string to list of integers
 ADMIN_IDS: List[int] = [
