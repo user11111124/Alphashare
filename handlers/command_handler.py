@@ -66,7 +66,7 @@ async def start_command(client: Client, message: Message):
         if not await button_manager.check_force_sub(client, message.from_user.id):
             await message.reply_text(
                 "**⚠️ You must join our channel to use this bot!**\n\n"
-                "Please join Our Forcesub Channel and try again.",
+                "Join our Channel and try again.",
                 reply_markup=button_manager.force_sub_button()
             )
             return
@@ -92,7 +92,6 @@ async def start_command(client: Client, message: Message):
                         f"⏳ **File Auto-Delete Information**\n\n"
                         f"This file will be automatically deleted in {delete_time} minutes\n"
                         f"• Delete Time: {delete_time} minutes\n"
-                        f"• Time Left: {delete_time} minutes\n"
                         f"💡 **Save this file to your saved messages before it's deleted!**"
                     )
                     
