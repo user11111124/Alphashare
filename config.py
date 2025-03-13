@@ -86,21 +86,11 @@ SUPPORTED_MIME_TYPES = [
 
 class Messages:
     START_TEXT = """
-🎉 **Welcome to {bot_name}!** 🎉
-
 Hello {user_mention}! I'm your secure file sharing assistant.
 
-🔐 **Key Features:**
-• Secure File Sharing
-• Unique Download Links
-• Multiple File Types Support
-• Real-time Tracking
-• Force Subscribe
-
-📢 Join @Thealphabotz for updates!
-👨‍💻 Contact @adarsh2626 for support
-
-Use /help to see available commands!
+📢 Join @XTVeurope for updates!
+👨‍💻 Join @XTVchat for support!
+📑 Contact @XTV_official for ads!
 """
 
     HELP_TEXT = """
@@ -110,48 +100,18 @@ Use /help to see available commands!
 • /start - Start bot
 • /help - Show this help
 • /about - About bot
-
-👑 **Admin Commands:**
-• /upload - Upload file (reply to file)
-• /stats - View statistics
-• /broadcast - Send broadcast
-• Auto-Delete Feature:
-Files are automatically deleted after the set time.
-Use /auto_del to change the deletion time.
-
-📝 **Supported File Types:**
-• Documents (PDF, DOC, XLS, etc.)
-• Videos (MP4, MKV, AVI, etc.)
-• Audio (MP3, M4A, WAV, etc.)
-• Images (JPG, PNG, GIF, etc.)
-• Archives (ZIP, RAR, 7Z, etc.)
-• Applications (APK, EXE, etc.)
-• Other Formats
-
-⚠️ For support: @adarsh2626
 """
 
     ABOUT_TEXT = """
 ℹ️ **About {bot_name}**
 
 **Version:** `{version}`
-**Developer:** @adarsh2626
+**Developer:** @davdxp
 **Language:** Python
 **Framework:** Pyrogram
 
-📢 **Updates:** @Thealphabotz
-🛠 **Support:** @adarsh2626
-
-**Features:**
-• Secure File Sharing
-• Force Subscribe
-• Admin Controls
-• Real-time Stats
-• Multiple File Types
-• Enhanced Security
-• Automatic File Type Detection
-
-Made with ❤️ by @adarsh2626
+📢 **Updates:** @XTVeurope
+🛠 **Support:** @XTVchat
 """
 
     FILE_TEXT = """
@@ -161,18 +121,12 @@ Made with ❤️ by @adarsh2626
 **Size:** {file_size}
 **Type:** {file_type}
 **Downloads:** {downloads}
-**Uploaded:** {upload_time}
-**By:** {uploader}
-
-🔗 **Share Link:**
-`{share_link}`
 """
 
     FORCE_SUB_TEXT = """
 ⚠️ **Access Restricted!**
 
 Please join our channel to use this bot:
-Bot By @Thealphabotz
 
 Click button below, then try again!
 """
