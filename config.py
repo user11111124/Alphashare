@@ -86,7 +86,9 @@ SUPPORTED_MIME_TYPES = [
 
 class Messages:
     START_TEXT = """
-**Hello {user_mention}! I'm a secure file sharing assistant for members of @XTVeurope.**
+**Hello {user_mention}!**
+
+**I'm a secure file sharing assistant for members of @XTVeurope.**
 
 📑 Contact @XTV_official for ads!
 """
