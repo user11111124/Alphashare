@@ -91,8 +91,6 @@ async def start_command(client: Client, message: Message):
                     info_msg = await msg.reply_text(
                         f"⏳ **File Auto-Delete Information**\n\n"
                         f"This file will be automatically deleted in {delete_time} minutes\n"
-                        f"• Delete Time: {delete_time} minutes\n"
-                        f"• Time Left: {delete_time} minutes\n"
                         f"💡 **Save this file to your saved messages before it's deleted!**"
                     )
                     
@@ -173,7 +171,7 @@ async def stats_command(client: Client, message: Message):
         f"📥 Downloads: {stats['total_downloads']}\n"
         f"💾 Size: {humanbytes(stats['total_size'])}\n"
         f"🕒 Auto-Delete Files: {stats.get('active_autodelete_files', 0)}\n\n"
-        f"⏱ Current Auto-Delete Time: {getattr(config, 'DEFAULT_AUTO_DELETE', 30)} minutes"
+        f"⏱ Current Auto-Delete Time: {getattr(config, 'DEFAULT_AUTO_DELETE', 15)} minutes"
     )
     await message.reply_text(stats_text)
 
