@@ -20,6 +20,6 @@ async def stats_command(client: Client, message: Message):
         f"📥 Downloads: {stats['total_downloads']}\n"
         f"💾 Size: {humanbytes(stats['total_size'])}\n"
         f"🕒 Auto-Delete Files: {stats.get('active_autodelete_files', 0)}\n\n"
-        f"⏱ Current Auto-Delete Time: {getattr(config, 'DEFAULT_AUTO_DELETE', 30)} minutes"
+        f"⏱ Current Auto-Delete Time: {getattr(config, 'DEFAULT_AUTO_DELETE', 15)} minutes"
     )
     await message.reply_text(stats_text)
