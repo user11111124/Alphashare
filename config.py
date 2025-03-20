@@ -139,7 +139,7 @@ I'm a secure file sharing assistant for members of @XTVeurope.**
 `{share_link}`
 """
 
-    FORCE_SUB_TEXT ℹ️ = """
+    FORCE_SUB_TEXT = """
 ⚠️ **Access Restricted!**
 
 Please join our channel to use this bot:
