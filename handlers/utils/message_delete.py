@@ -11,7 +11,7 @@ async def schedule_message_deletion(client: Client, file_uuid: str, chat_id: int
         notification_msg = await client.send_message(
             chat_id=chat_id,
             text=(
-                "🕒 **Auto-Delete Notification**\n\n"
+                "🚫 **Auto-Delete Notification**\n\n"
                 "The file you received has been automatically deleted.\n\n"
                 "• You can request the file again using the same link\n"
                 "• Save important files to your saved messages\n"
