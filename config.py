@@ -36,7 +36,7 @@ DEVELOPER_LINK = os.getenv("DEVELOPER_LINK")
 SUPPORT_LINK = os.getenv("SUPPORT_LINK")
 
 # For Koyeb/render 
-WEB_SERVER = bool(os.getenv("WEB_SERVER", True)) # make it True if deploying on koyeb/render else False
+WEB_SERVER = bool(os.getenv("WEB_SERVER", False)) # make it True if deploying on koyeb/render else False
 PING_URL = os.getenv("PING_URL") # add your koyeb/render's public url
 PING_TIME = int(os.getenv("PING_TIME")) # Add time_out in seconds
 
@@ -98,74 +98,32 @@ SUPPORTED_MIME_TYPES = [
 
 class Messages:
     START_TEXT = """
-🎉 **Welcome to {bot_name}!** 🎉
+🎉 Hello {user_mention}! 🎉
 
-Hello {user_mention}! I'm your secure file sharing assistant.
+I'm a secure file sharing assistant for members of @XTVeurope.**
 
-🔐 **Key Features:**
-• Secure File Sharing
-• Unique Download Links
-• Multiple File Types Support
-• Real-time Tracking
-• Force Subscribe
-
-📢 Join @Thealphabotz for updates!
-👨‍💻 Contact @adarsh2626 for support
-A Open Source Repo :- github.com/utkarshdubey2008/alphashare
-
-Use /help to see available commands!
+📑 Contact @XTV_official for ads!
 """
 
     HELP_TEXT = """
-📚 **Available Commands**  
+👤 **User Commands:**
+• /start - Start bot
+• /help - Show this help
+• /about - About bot
 
-👤 **User Commands:**  
-• `/start` - Start the bot  
-• `/help` - Show this menu  
-• `/about` - Bot details  
-• `/short [url]` - Shorten a link (e.g., `/short example.com`)  
-
-👑 **Admin Commands:**  
-• `/upload` - Upload a file (reply to a file)  
-• `/stats` - View bot statistics  
-• `/broadcast` - Send a message to all users  
-• `/auto_del` - Set auto-delete timer  
-
-🗑 **Auto-Delete System:**  
-• Files auto-delete after a set time.  
-• Modify timer using `/auto_del`.  
-
-🔗 **Batch System:**  
-• `/batch` - Group multiple files into one link.  
-• Forward files & reply with `/batch`.  
-
-🛠 **Open Source:**  
-🔗 [GitHub](https://github.com/utkarshdubey2008/alphashare)  
-
-⚠️ **Need Help?** Contact [@adarsh2626](https://t.me/adarsh2626)  
+⚠️ **Need Help?** Join [@XTVchat](https://t.me/XTVchat/17426)  
 """
 
     ABOUT_TEXT = """
 ℹ️ **About {bot_name}**
 
 **Version:** `{version}`
-**Developer:** @adarsh2626
+**Developer:** @davdxp
 **Language:** Python
 **Framework:** Pyrogram
 
-📢 **Updates:** @Thealphabotz
-🛠 **Support:** @adarsh2626
-
-**Features:**
-• Secure File Sharing
-• Force Subscribe
-• Admin Controls
-• Real-time Stats
-• Multiple File Types
-• Enhanced Security
-• Automatic File Type Detection
-
-Made with ❤️ by @adarsh2626
+📢 **Updates:** @XTVeurope
+🛠 **Support:** @XTVchat
 """
 
     FILE_TEXT = """
@@ -175,8 +133,6 @@ Made with ❤️ by @adarsh2626
 **Size:** {file_size}
 **Type:** {file_type}
 **Downloads:** {downloads}
-**Uploaded:** {upload_time}
-**By:** {uploader}
 
 🔗 **Share Link:**
 `{share_link}`
@@ -186,7 +142,6 @@ Made with ❤️ by @adarsh2626
 ⚠️ **Access Restricted!**
 
 Please join our channel to use this bot:
-Bot By @Thealphabotz
 
 Click button below, then try again!
 """
