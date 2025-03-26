@@ -68,8 +68,6 @@ async def start_command(client: Client, message: Message):
                                 info_msg = await msg.reply_text(
                                     f"⏳ **File Auto-Delete Information**\n\n"
                                     f"This file will be automatically deleted in {delete_time} minutes\n"
-                                    f"• Delete Time: {delete_time} minutes\n"
-                                    f"• Time Left: {delete_time} minutes\n"
                                     f"💡 **Save this file to your saved messages before it's deleted!**",
                                     protect_content=config.PRIVACY_MODE
                                 )
