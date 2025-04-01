@@ -123,7 +123,7 @@ I'm a secure file sharing assistant for members of @XTVeurope.**
 ℹ️ **About {bot_name}**
 
 **Version:** `{version}`
-**Developer:** @adarsh2626
+**Developer:** @davdxp
 **Language:** Python
 **Framework:** Pyrogram
 
