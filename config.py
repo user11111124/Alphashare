@@ -30,7 +30,7 @@ BOT_VERSION = "1.6"
 
 # Privacy Mode Configuration and codexbotz delete time
 PRIVACY_MODE = os.getenv("PRIVACY_MODE", "off").lower() == "on"
-AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 30))
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 15))
 
 # Your Modiji Url Api Key Here
 MODIJI_API_KEY = os.getenv("MODIJI_API_KEY")
@@ -43,7 +43,7 @@ DEVELOPER_LINK = os.getenv("DEVELOPER_LINK")
 SUPPORT_LINK = os.getenv("SUPPORT_LINK")
 
 # For Koyeb/render 
-WEB_SERVER = bool(os.getenv("WEB_SERVER", True)) # make it True if deploying on koyeb/render else False
+WEB_SERVER = bool(os.getenv("WEB_SERVER", False)) # make it True if deploying on koyeb/render else False
 PING_URL = os.getenv("PING_URL") # add your koyeb/render's public url
 PING_TIME = int(os.getenv("PING_TIME")) # Add time_out in seconds
 
