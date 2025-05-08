@@ -57,10 +57,10 @@ async def start_command(client: Client, message: Message):
         if not force_sub_status:
             force_sub_text = "**⚠️ You must join our channel(s) to use this bot!**\n\n"
             channels = [
-                (config.FORCE_SUB_CHANNEL, "Join Channel 1"),
-                (config.FORCE_SUB_CHANNEL_2, "Join Channel 2"),
-                (config.FORCE_SUB_CHANNEL_3, "Join Channel 3"),
-                (config.FORCE_SUB_CHANNEL_4, "Join Channel 4")
+                (config.FORCE_SUB_CHANNEL, "𝕏𝕋𝕍"),
+                (config.FORCE_SUB_CHANNEL_2, "𝕏𝕊𝕖𝕣𝕚𝕖𝕤"),
+                (config.FORCE_SUB_CHANNEL_3, "𝕏𝔸𝕟𝕚𝕞𝕖"),
+                (config.FORCE_SUB_CHANNEL_4, "𝕏𝕄𝕠𝕧𝕚𝕖𝕤")
             ]
 
             for ch_id, name in channels:
