@@ -109,7 +109,7 @@ class Messages:
 
 I'm a secure file sharing assistant for members of @XTVeurope.
 
-📑 Contact @XTV_official for ads!
+📑 Contact @XTV_official for ads.
 """
 
     HELP_TEXT = """
