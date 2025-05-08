@@ -33,7 +33,7 @@ START_PHOTO = os.getenv("START_PHOTO", "") #start photo for bot
 # Bot Information
 BOT_USERNAME = os.getenv("BOT_USERNAME")
 BOT_NAME = os.getenv("BOT_NAME")
-BOT_VERSION = "1.6"
+BOT_VERSION = "1.7"
 
 # Privacy Mode Configuration and codexbotz delete time
 PRIVACY_MODE = os.getenv("PRIVACY_MODE", "off").lower() == "on"
